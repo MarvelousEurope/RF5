@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/* Scss Document */
+/* Scss Document */
+/*▼色▼*/
+/*▼幅▼*/
+/*▼文字▼*/
+/*▼WAKU系▼*/
+/*▼FLEX系▼*/
+/*▼グリッド系▼*/
+body.frontpage {
+  background-color: #fcf8ee !important; }
+
+.top_main {
+  text-align: center;
+  position: relative;
+  min-height: 768px; }
+  .top_main .box1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: calc(100vh - 6rem);
+    width: calc(100% - 6rem);
+    margin: 3rem; }
+  .top_main .box2 {
+    position: relative;
+    border: 3px solid #f1e7d4;
+    padding: 0.6rem;
+    margin: 0 auto;
+    max-width: 1180px;
+    min-height: 768px;
+    height: calc(100vh - 6rem);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../img/parts/top_main_bg.svg"); }
+  .top_main .deco4 {
+    position: absolute; }
+    .top_main .deco4.img1 {
+      top: 0.6rem;
+      left: 0.6rem; }
+    .top_main .deco4.img2 {
+      top: 0.6rem;
+      right: 0.6rem;
+      transform: rotate(90deg); }
+    .top_main .deco4.img3 {
+      bottom: 0.6rem;
+      right: 0.6rem;
+      transform: rotate(180deg); }
+    .top_main .deco4.img4 {
+      bottom: 0.6rem;
+      left: 0.6rem;
+      transform: rotate(270deg); }
+    .top_main .deco4 img {
+      width: 10.3rem;
+      height: 10.3rem; }
+
+.top_main_ctt {
+  text-align: center;
+  min-height: 100vh;
+  padding: 3rem 0;
+  position: relative;
+  z-index: 5500;
+  width: 100%; }
+
+.tit_top {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  color: #b29851;
+  display: inline-block;
+  text-align: center;
+  line-height: 1 !important;
+  position: relative;
+  z-index: 1200;
+  width: 100%; }
+  .tit_top span {
+    display: inline-block;
+    padding: 0 11.6rem;
+    font-size: 4.2rem;
+    margin: 2.4rem 0 1.2rem; }
+  .tit_top small {
+    font-size: 2.4rem;
+    display: block;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 600;
+    letter-spacing: 0; }
+    .tit_top small::before {
+      content: '';
+      display: block;
+      margin-bottom: 0.75rem;
+      height: 1rem;
+      background-image: url("../img/parts/top_ttl_kei.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center; }
+
+.top_chara_all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 768px;
+  /*background-size: contain; background-position: center center; background-repeat: no-repeat; background-image: url("../img/parts/top_chara_all_pc.png");*/
+  background-image: url("../img/parts/top_chara_all_pc.png");
+  background-repeat: no-repeat;
+  background-position: center top 16rem;
+  background-size: contain; }
+  .top_chara_all img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    /*max-width: 2560px;*/ }
+
+.top_main_nav {
+  position: relative;
+  bottom: unset;
+  margin: 12.5vw auto 0;
+  z-index: 1150;
+  text-align: center;
+  width: 100%;
+  padding: 0 3rem; }
+  .top_main_nav .box3 {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 3px solid #b29851;
+    padding: 0.3rem;
+    display: inline-block;
+    margin: auto; }
+  .top_main_nav .box4 {
+    border: 1px solid #b29851;
+    padding: 2.4rem 4.8rem;
+    background-image: url("../img/parts/deco2-1.png"), url("../img/parts/deco2-2.png"), url("../img/parts/deco2-3.png"), url("../img/parts/deco2-4.png");
+    background-position: left 0.3rem top 0.3rem,right 0.3rem top 0.3rem,right 0.3rem bottom 0.3rem,left 0.3rem bottom 0.3rem;
+    background-size: 4.5rem 4.5rem;
+    background-repeat: no-repeat; }
+
+.copy {
+  line-height: 1;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0.9rem;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 3rem;
+  color: #b29851; }
+
+/*---------------------------------------------------------------------------BP1920*/
+@media (max-width: 1920px) {
+  .top_main_nav {
+    margin-top: 13vw; } }
+/*---------------------------------------------------------------------------BP1600*/
+@media (max-width: 1600px) {
+  .top_main_nav {
+    margin-top: 13vw; } }
+/*---------------------------------------------------------------------------BP1280*/
+@media (max-width: 1280px) {
+  .top_main_nav {
+    margin-top: 13vw; } }
+/*---------------------------------------------------------------------------BP1024*/
+@media (max-width: 1024px) {
+  .top_main_nav {
+    margin-top: 13.5vw; }
+
+  /*.top_chara_all {background-position: center top 15rem;}*/ }
+/*---------------------------------------------------------------------------BP960*/
+@media (max-width: 960px) {
+  .top_main_nav {
+    margin-top: 14vw; } }
+/*---------------------------------------------------------------------------BP896*/
+@media (max-width: 896px) {
+  .top_main_nav .box4 {
+    padding: 2.4rem; }
+
+  .top_main_nav_box .menu_box03 .menu_box01 h2 {
+    font-size: 1.8rem; }
+
+  .top_main_nav_box .menu_box03 .menu_box01 {
+    width: 30rem; }
+
+  .top_main_nav {
+    margin-top: 25rem; }
+
+  .top_main_nav_box .menu_box02 ul li:nth-child(1) {
+    text-align: center; }
+  .top_main_nav_box .menu_box02 ul li:nth-child(2) {
+    text-align: center; }
+  .top_main_nav_box .menu_box02 ul li:nth-child(1) a {
+    margin-right: 0; }
+  .top_main_nav_box .menu_box02 ul li:nth-child(2) a {
+    margin-left: 0; }
+  .top_main_nav_box .menu_box02 ul li {
+    width: auto; }
+  .top_main_nav_box .menu_box02 ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+  .top_main_nav {
+    width: -moz-min-content;
+    /* Firefox */
+    width: -webkit-min-content;
+    /* Chrome */
+    width: min-content; } }
+/*---------------------------------------------------------------------------BP768*/
+@media (max-width: 768px) {
+  .top_main_ctt {
+    padding: 3rem 0; }
+
+  .top_chara_all {
+    background-image: url("../img/parts/top_chara_all_sp.png"); }
+
+  .top_main_nav {
+    margin-top: 56.15vw;
+    margin-bottom: 15rem; }
+
+  .top_main .box1 {
+    height: calc(100vh - 3rem);
+    width: calc(100% - 3rem);
+    margin: 1.5rem; }
+
+  .top_main .box2 {
+    min-height: unset;
+    height: calc(100vh - 3rem); }
+
+  .copy {
+    bottom: 2.8rem; } }
+/*---------------------------------------------------------------------------BP620*/
+/*---------------------------------------------------------------------------BP480*/
+@media (max-width: 480px) {
+  .tit_top span {
+    font-size: 3rem; }
+
+  .tit_top small {
+    font-size: 2rem; }
+
+  .top_main_nav {
+    margin-top: 59.5vw;
+    padding: 0;
+    width: 85%; }
+
+  .tit_top span {
+    padding: 0; }
+
+  .top_main_nav_box .menu_box03 .menu_box01 {
+    width: 100%; }
+
+  .top_main_nav .box4 {
+    padding: 2.4rem 1.6rem; }
+
+  .tit_top {
+    width: 85%; } }

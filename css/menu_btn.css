@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* Scss Document */
+/* Scss Document */
+/*▼色▼*/
+/*▼幅▼*/
+/*▼文字▼*/
+/*▼WAKU系▼*/
+/*▼FLEX系▼*/
+/*▼グリッド系▼*/
+/**　↓↓↓　menu btn　↓↓↓　**/
+/*非表示設定*/
+/*
+nav {
+  .menu_base {display: block;}
+	&.menu_btn {display: none;}
+	&#menu_blank {display: none;}
+}
+*/
+/**　↓↓↓　menu btn　↓↓↓　**/
+/**　↓↓↓　ハンバーガー調整　↓↓↓　**/
+nav.menu_btn {
+  width: 4.4rem;
+  height: 5.6rem;
+  top: 3rem;
+  right: 3rem;
+  position: fixed;
+  cursor: pointer;
+  overflow: visible;
+  z-index: 99998;
+  padding: 0;
+  box-sizing: content-box;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 5px 0 0 5px;
+  /*box-shadow: 0px 0px 8px rgba(0,0,0,0.25);*/
+  /**　↓↓↓　アニメーション調整　↓↓↓　**/
+  /**　↓↓↓　クリック時の動き調整　↓↓↓　**/ }
+  nav.menu_btn.menuclick_btn::after {
+    background-image: url("../img/parts/close.png"); }
+  nav.menu_btn::after {
+    content: '';
+    height: 2rem;
+    background-image: url("../img/parts/menu.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    margin-top: calc(1.7rem + 6px + 0.8rem);
+    display: inline-block; }
+  nav.menu_btn .menu1, nav.menu_btn .menu2, nav.menu_btn .menu3 {
+    width: 4rem;
+    height: 2px;
+    background-color: #b29851;
+    z-index: 99999;
+    position: absolute;
+    margin: 0 0.2rem; }
+  nav.menu_btn .menu1 {
+    top: 0rem; }
+  nav.menu_btn .menu2 {
+    top: 1.2rem; }
+  nav.menu_btn .menu3 {
+    top: 2.4rem; }
+  nav.menu_btn .menu1, nav.menu_btn .menu2, nav.menu_btn .menu3 {
+    border-radius: 2rem;
+    z-index: 99999;
+    transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    /* Opera */
+    -moz-transition: all 0.2s ease-out;
+    /* Firefox */
+    -webkit-transition: all 0.2s ease-out;
+    /* GoogleChrome, Safari */
+    -ms-transition: all 0.2s ease-out;
+    /* IE */ }
+  nav.menu_btn .menuclick1, nav.menu_btn .menuclick2, nav.menu_btn .menuclick3 {
+    width: 4.5rem; }
+  nav.menu_btn .menuclick1 {
+    top: 1.2rem;
+    -o-transform: rotate(150deg);
+    -moz-transform: rotate(150deg);
+    -webkit-transform: rotate(150deg);
+    -ms-transform: rotate(150deg);
+    transform: rotate(150deg); }
+  nav.menu_btn .menuclick2 {
+    background-color: rgba(255, 255, 255, 0); }
+  nav.menu_btn .menuclick3 {
+    top: 1.2rem;
+    -o-transform: rotate(-150deg);
+    -moz-transform: rotate(-150deg);
+    -webkit-transform: rotate(-150deg);
+    -ms-transform: rotate(-150deg);
+    transform: rotate(-150deg); }
+
+.page nav.menu_btn.menuclick_btn::after {
+  background-image: url("../img/parts/close.png"); }
+.page nav.menu_btn::after {
+  background-image: url("../img/parts/menu_w.png"); }
+.page nav.menu_btn .menu1, .page nav.menu_btn .menu2, .page nav.menu_btn .menu3 {
+  background-color: white; }
+.page nav.menu_btn .menuclick1, .page nav.menu_btn .menuclick3 {
+  background-color: #b29851; }
+.page nav.menu_btn .menuclick2 {
+  background-color: rgba(255, 255, 255, 0); }
+.page nav.menu_btn.transform.menuclick_btn::after {
+  background-image: url("../img/parts/close.png"); }
+.page nav.menu_btn.transform::after {
+  background-image: url("../img/parts/menu.png"); }
+.page nav.menu_btn.transform .menu1, .page nav.menu_btn.transform .menu2, .page nav.menu_btn.transform .menu3 {
+  background-color: #b29851; }
+.page nav.menu_btn.transform .menuclick1, .page nav.menu_btn.transform .menuclick3 {
+  background-color: #b29851; }
+.page nav.menu_btn.transform .menuclick2 {
+  background-color: rgba(255, 255, 255, 0); }
+
+/**　↓↓↓　表示するメニューの調整　↓↓↓　**/
+#menu_blank {
+  overflow-y: scroll;
+  z-index: 95000;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  list-style-type: none;
+  background-color: white;
+  border: none;
+  margin-right: 0%;
+  padding: 0; }
+
+/*---------------------------------------------------------------------------BP1920*/
+/*---------------------------------------------------------------------------BP1600*/
+/*---------------------------------------------------------------------------BP1280*/
+/*---------------------------------------------------------------------------BP1024*/
+/*---------------------------------------------------------------------------BP960*/
+/*---------------------------------------------------------------------------BP896*/
+/*---------------------------------------------------------------------------BP768*/
+@media (max-width: 768px) {
+  nav.menu_btn {
+    top: 1.5rem;
+    right: 1.5rem; } }
+/*---------------------------------------------------------------------------BP620*/
+/*---------------------------------------------------------------------------BP480*/

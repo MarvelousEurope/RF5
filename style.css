@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&family=Noto+Serif+JP:wght@600;700&display=swap');
+
+/*
+@import url(css/test.css);
+*/
+
+@import url("css/basic.css");
+@import url("css/parts.css");
+@import url("css/menu_btn.css");
+@import url("css/top_main.css");
+@import url("css/menu.css");
+@import url("css/page.css");
+@import url("css/footer.css");
+@import url("css/menu_blank.css");
+@import url("css/option.css");
+
+
+.dis42_l,.dis42_b {display: none;}
+.nondis42_l {display: inline;}
+.nondis42_b {display: block;}
+/*---------------------------------------------------------------------------BP480*/
+@media (max-width: 480px) {
+	.dis42_l {display: inline-block;}
+	.dis42_b {display: block;}
+	.nondis42_l,.nondis42_b {display: none;}
+}

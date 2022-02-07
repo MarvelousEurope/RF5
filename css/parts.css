@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* Scss Document */
+/* Scss Document */
+/*▼色▼*/
+/*▼幅▼*/
+/*▼文字▼*/
+/*▼WAKU系▼*/
+/*▼FLEX系▼*/
+/*▼グリッド系▼*/
+/*page top*/
+.page_top {
+  position: fixed;
+  z-index: 90000;
+  bottom: 30px;
+  right: 30px; }
+
+/*tit*/
+.tit_game {
+  color: #b29851;
+  display: inline-block;
+  position: absolute;
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  top: 3rem;
+  left: 3rem;
+  line-height: 1;
+  z-index: 50000;
+  font-size: 16px; }
+
+.frontpage .tit_game {
+  position: fixed; }
+
+.page .tit_game a {
+  text-decoration: none;
+  color: white; }
+  .page .tit_game a:hover {
+    color: #b29851; }
+
+.tit_deco1 {
+  text-align: center;
+  color: #b29851;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 3rem;
+  font-style: italic; }
+  .tit_deco1 span {
+    display: inline-block;
+    font-size: 3.6rem;
+    line-height: 1;
+    padding: 0 1.5em;
+    background-image: url("../img/parts/deco_tit_index1.png"), url("../img/parts/deco_tit_index2.png");
+    background-repeat: no-repeat;
+    background-position: center left, center right;
+    background-size: contain; }
+
+.tit_l {
+  margin-bottom: 4rem; }
+  .tit_l span {
+    color: #b29851;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 600;
+    font-size: 2.8rem;
+    text-align: center;
+    padding: 0 0 1.25em;
+    line-height: 1.35;
+    display: block;
+    background-image: url("../img/parts/ttl_m_kei_l.png"), url("../img/parts/ttl_m_kei_r.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom, right bottom; }
+  .tit_l::before {
+    content: '';
+    margin-bottom: 2rem;
+    display: block;
+    height: 4rem;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../img/parts/ttl_m_kei_ic.png");
+    background-repeat: no-repeat; }
+
+.tit_m {
+  background-image: url("../img/parts/ttl_s.png");
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 2rem;
+  background-repeat: no-repeat;
+  padding: 1rem 0;
+  margin-top: 6rem; }
+  .tit_m span {
+    color: #b29851;
+    font-size: 2.2rem;
+    line-height: 1.35; }
+
+.tit_nondeco {
+  font-size: 3.2rem;
+  text-align: center;
+  color: #b29851;
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  line-height: 1;
+  padding: 1rem 0 4rem; }
+
+.spacer1 {
+  text-align: center;
+  margin-bottom: 4rem; }
+  .spacer1 img {
+    width: 50%;
+    max-width: 105px; }
+
+/*---------------------------------------------------------------------------BP1920*/
+/*---------------------------------------------------------------------------BP1600*/
+/*---------------------------------------------------------------------------BP1280*/
+/*---------------------------------------------------------------------------BP1024*/
+/*---------------------------------------------------------------------------BP960*/
+/*---------------------------------------------------------------------------BP896*/
+/*---------------------------------------------------------------------------BP768*/
+@media (max-width: 768px) {
+  .frontpage .tit_game {
+    display: none; }
+
+  .tit_game {
+    position: relative;
+    font-size: 14px;
+    width: 100%;
+    background-color: #b29851;
+    text-align: center;
+    padding: 0.5em;
+    top: 0;
+    left: 0; }
+
+  .tit_l span {
+    font-size: 2.2rem;
+    padding: 0.75em 0 1em; }
+
+  .tit_m span {
+    font-size: 1.8rem; }
+
+  .page_top {
+    right: 1.5rem; } }
+/*---------------------------------------------------------------------------BP620*/
+/*---------------------------------------------------------------------------BP480*/

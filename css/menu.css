@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* Scss Document */
+/* Scss Document */
+/*▼色▼*/
+/*▼幅▼*/
+/*▼文字▼*/
+/*▼WAKU系▼*/
+/*▼FLEX系▼*/
+/*▼グリッド系▼*/
+.menu_box02 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 1.5rem; }
+  .menu_box02 ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    list-style: none; }
+    .menu_box02 ul li {
+      width: 25rem; }
+      .menu_box02 ul li a {
+        text-decoration: none;
+        font-family: "Noto Serif JP", serif;
+        color: #b29851;
+        padding: 0.35em 1em;
+        background-color: rgba(255, 255, 255, 0);
+        line-height: 1;
+        display: inline-block;
+        font-weight: 600; }
+        .menu_box02 ul li a:hover {
+          background-color: #9c7cab;
+          color: white; }
+      .menu_box02 ul li:nth-child(1) {
+        text-align: right; }
+        .menu_box02 ul li:nth-child(1) a {
+          margin-right: 5rem; }
+      .menu_box02 ul li:nth-child(2) {
+        text-align: left; }
+        .menu_box02 ul li:nth-child(2) a {
+          margin-left: 5rem; }
+
+.menu_box03 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .menu_box03 .menu_box01 {
+    margin: 1.5rem;
+    width: 32rem; }
+    .menu_box03 .menu_box01 h2 {
+      text-align: center;
+      margin-bottom: 0.75em;
+      line-height: 1;
+      padding: 0.35em 0;
+      color: #b29851;
+      font-size: 2.0rem;
+      border-top: 1px solid #b29851;
+      border-bottom: 1px solid #b29851;
+      font-weight: bold; }
+    .menu_box03 .menu_box01 ul {
+      list-style: none; }
+      .menu_box03 .menu_box01 ul li a {
+        display: block;
+        line-height: 1;
+        padding: 0.35em 0;
+        color: #b29851;
+        text-decoration: none;
+        font-family: "Noto Serif JP", serif;
+        margin-bottom: 0.35em;
+        font-weight: 600; }
+        .menu_box03 .menu_box01 ul li a:hover {
+          background-color: #9c7cab;
+          color: white; }
+
+/*---------------------------------------------------------------------------BP1920*/
+/*---------------------------------------------------------------------------BP1600*/
+/*---------------------------------------------------------------------------BP1280*/
+/*---------------------------------------------------------------------------BP1024*/
+/*---------------------------------------------------------------------------BP960*/
+/*---------------------------------------------------------------------------BP896*/
+/*---------------------------------------------------------------------------BP768*/
+/*---------------------------------------------------------------------------BP620*/
+/*---------------------------------------------------------------------------BP480*/
