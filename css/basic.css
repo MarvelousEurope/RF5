@@ -881,7 +881,7 @@ img {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 0 2em 0 0;
-  background-image: url("../img/bg_sankaku_ar_r.png");
+  background-image: url("http://localhost:8080/img/bg_sankaku_ar_r.png");
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 1em auto;
